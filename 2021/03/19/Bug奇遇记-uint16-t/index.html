@@ -87,10 +87,10 @@
 <meta property="og:description" content="uint16_t 标准定义中：  1typedef unsigned short  uint16_t; &#x2F;&#x2F; max &#x3D;&#x3D; _UI16_MAX 0xffffu    问题： 这是一个粗心的问题  在我正在实现的功能中有一个数据遍历的部分，我使用了uint16_t类型作为索引的类型，但是uint16_t数据的最大值比较小，所以当基础数据量过大的时候，我们产生的索引会越过索引的最大范围，导致最终得到的">
 <meta property="og:locale">
 <meta property="og:image" content="http://example.com/2021/03/19/uploads/uint16_t.png">
-<meta property="og:image" content="http://example.com/2021/03/19/uploads/lum_arrow_2.png">
-<meta property="og:image" content="http://example.com/2021/03/19/uploads/lum_arrow_1.png">
+<meta property="og:image" content="http://example.com/2021/03/19/images/lum_arrow_2.png">
+<meta property="og:image" content="http://example.com/2021/03/19/images/lum_arrow_1.png">
 <meta property="article:published_time" content="2021-03-19T12:47:11.000Z">
-<meta property="article:modified_time" content="2021-03-19T13:21:32.250Z">
+<meta property="article:modified_time" content="2021-03-19T13:36:00.094Z">
 <meta property="article:author" content="Baozi">
 <meta property="article:tag" content="cpp">
 <meta name="twitter:card" content="summary">
@@ -439,14 +439,14 @@
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">short</span>  <span class="keyword">uint16_t</span>; <span class="comment">// max == _UI16_MAX 0xffffu </span></span><br></pre></td></tr></table></figure>
 
-<p><img src="../uploads/uint16_t.png" alt="uint16_t"></p>
+<p><img src="/uploads/uint16_t.png" alt="uint16_t"></p>
 <h4 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h4><ul>
 <li><font color=red>这是一个粗心的问题</font></li>
 </ul>
 <p>在我正在实现的功能中有一个数据遍历的部分，我使用了<code>uint16_t</code>类型作为索引的类型，但是<code>uint16_t</code>数据的最大值比较小，所以当基础数据量过大的时候，我们产生的索引会越过索引的最大范围，导致最终得到的索引不是实际需要的索引值，导致我最终绘制的图形不是正确的结果！</p>
 <hr>
-<h3 id="正确的结果展示："><a href="#正确的结果展示：" class="headerlink" title="正确的结果展示："></a>正确的结果展示：</h3><p><img src="../uploads/lum_arrow_2.png" alt="lum_2" title="result"></p>
-<p><img src="../uploads/lum_arrow_1.png" alt="right result" title="Result"></p>
+<h3 id="正确的结果展示："><a href="#正确的结果展示：" class="headerlink" title="正确的结果展示："></a>正确的结果展示：</h3><p><img src="/uploads/lum_arrow_2.png" alt="lum_2" title="result"></p>
+<p><img src="/uploads/lum_arrow_1.png" alt="right result" title="Result"></p>
 
       
     </div>
